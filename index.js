@@ -12,7 +12,7 @@
 // Step 1: Select the theme button
 
 // Step 2: Write the callback function
-const toggleDarkMode = () => { 
+const toggleDarkMode = () => {
     // Write your code here
     // This section will run whenever the button is clicked
 }
