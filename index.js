@@ -26,3 +26,22 @@ themeButton.addEventListener("click", toggleDarkMode);
 /*** Form Validation [PLACEHOLDER] [ADDED IN UNIT 7] ***/
 /*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
 /*** Success Modal [PLACEHOLDER] [ADDED IN UNIT 9] ***/
+
+
+
+
+
+
+
+
+
+
+
+array = [4,2,8,9,5]
+
+n = len(array)
+
+for i in range(n-1):
+  for j in range(n-i-1):
+    if array[j] > array[j+1]:
+      array[j], array[j+1] = array[j+1], array[j]
