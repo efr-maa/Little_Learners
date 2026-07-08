@@ -1,0 +1,280 @@
+/*** You will not need this file until Unit 3 ***/
+/*** VSCodeEDU preview fix 
+
+  Purpose:
+  - Fix VSCodeEDU issue that causes a white border to show around
+    the preview window
+
+***/
+html {
+    background-color: var(--bg-color);
+}
+
+/*** body ***
+  
+  Purpose:
+  - Add style rules for the body of your webpage
+  - This is useful if you want a rule to apply to EVERYTHING on your page
+    - (Tip: You can always override these rules later in the stylesheet)
+***/
+
+body {
+    background-color: rgb(230, 203, 218);
+    font-family: "Georgia", serif;
+    padding-bottom: 70px;
+}
+
+/*** Text ***
+  
+  Purpose: 
+  - Add style rules for headings (h1-6),
+    paragraphs (p), links (a), and buttons
+***/
+
+h1 {
+    background-color: #e6a7cb;
+    color: #5c2a4a;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 60px;
+    width: 100%;
+}
+
+h2 {
+    color: #c85a9e;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+h3 {
+    color: #8b4f73;
+    font-size: 26px;
+    margin-top: 20px;
+}
+
+h4 {
+    color: #6b5b67;
+    font-size: 20px;
+    font-style: italic;
+}
+p {
+    color: #5f5f5f;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+a,
+a * {
+    text-decoration: none;
+    color: #c85a9e;
+}
+
+a:link {
+    color: #c85a9e;
+}
+
+a:visited {
+    color: #8b4f73;
+}
+
+a:hover,
+a:hover * {
+    color: #ff69b4;
+}
+
+a:active,
+a:active * {
+    color: #ff1493;
+}
+
+button {
+                background-color: rgb(239, 148, 204);
+                border-radius: 6px;
+                font-family: "Georgia", serif;
+            }
+
+button:hover {
+    /* Make the button look different when the user hovers over it */
+}
+
+/*** header ***
+  
+  Purpose:
+  - Add style rules for your website's header section
+***/
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+
+    margin-top: 80px;
+    margin-bottom: 60px;
+
+    padding: 30px;
+}
+
+.header-item:nth-of-type(1) {
+    width: 40%;
+}
+
+.header-item:nth-of-type(2) {
+    text-align: center;
+}
+
+#header-img {
+    width: 250px;
+    height: auto;
+
+    border-radius: 25px;
+
+    box-shadow: 0 6px 20px rgba(0,0,0,.15);
+}
+
+.header-button {
+    background-color: #ea7eb8;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 30px;
+    margin: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+/*** footer ***
+  
+  Purpose:
+  - Add style rules for your website's footer section
+
+  When To Modify:
+  - [ ] Project 3 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    background-color: #e6a7cb;
+    text-align: center;
+    padding: 5px;
+    color: #5c2a4a;
+    font-size: 16px;
+}
+
+/*** Navigation bar (navbar) ***
+  
+  Purpose:
+  - Add style rules for your website's navbar
+***/
+
+.navbar ul {
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: #e6a7cb;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.navbar ul li {
+    float: left;
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.navbar ul li a:hover {
+    background-color: #ff69b4;
+    color: white;
+}
+
+
+/*** About Section ***
+  
+  Purpose:
+  - Add style rules for your website's About section
+***/
+
+
+/*** Schedule Section ***
+  
+  Purpose:
+  - Add style rules for your website's Schedule section
+***/
+
+
+/*** Links Section ***
+  
+  Purpose:
+  - Add style rules for your website's Links section
+***/
+
+
+/*** RSVP [PLACEHOLDER] [ADDED IN UNIT 6] ***/
+/*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
+/*** Success Modal [PLACEHOLDER] [ADDED IN UNIT 9] ***/
+/*** Dark Mode [PLACEHOLDER] [ADDED IN UNIT 5] ***/
+
+/*** Custom Colors (OPTIONAL) ***
+  
+  Purpose:
+  - Use CSS variables to define custom colors for your website
+  - To get you started, we've provided the color scheme used in our example site.
+  - To reference a color variable in your css, use var(--variable-name) in place of a color value
+
+  When To Modify:
+  - [ ] Any time (OPTIONAL)
+***/
+
+:root {
+    /* Light Mode */
+    --bg-color: #a6a0cf;
+    --text-color: #231942;
+
+    /* Dark Mode */
+    --bg-color-dark-mode: #3e3377;
+    --text-color-dark-mode: #fff;
+
+    /* Accent Colors */
+    --accent-color-light: #d2cff5;
+    --accent-color-medium: #684fb5;
+    --accent-color-dark: #482f95;
+    --accent-color-darkest: #231942;
+    --accent-color-green: #28eb76;
+
+    /* Error Colors */
+    --error-color: #f8bbd0;
+    --error-color-border: #e63946;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
